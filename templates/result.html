@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-4">Prediction Result</h1>
+        <div class="bg-white p-6 rounded shadow-md text-center">
+            <p class="text-xl font-bold">The model predicts that the uploaded image shows:</p>
+            <p class="text-2xl font-bold text-blue-500 mt-2">{{ prediction }}</p>
+            <p class="text-lg mt-2">Accuracy: {{ accuracy }}%</p>
+            <a href="{{ url_for('home') }}" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded">Upload
+                Another Image</a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.js"></script>
+</body>
+
+</html>
