@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "watch": "npx tailwindcss -i ./static/src/style.css -o ./static/dist/css/output.css --watch",
+    "dev": "flask run"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "flowbite": "^2.3.0"
+  }
+}

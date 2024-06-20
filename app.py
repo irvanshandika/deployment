@@ -18,7 +18,19 @@ def allowed_file(filename):
 # Define a route for the home page
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
+
+@app.route('/faq')
+def faq():
+    return render_template('faq.html', title="FAQ's")
+
+@app.route('/klasifikasi')
+def klasifikasi():
+    return render_template('klasifikasi.html')
+
+@app.route('/pendahuluan')
+def pendahuluan():
+    return render_template('pendahuluan.html')
 
 # Define a route for predictions
 @app.route('/predict', methods=['POST'])
