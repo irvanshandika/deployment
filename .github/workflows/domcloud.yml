@@ -15,4 +15,4 @@ jobs:
           webhook_secret: ${{ secrets.WEBHOOK_SECRET_SGA }}
           webhook_auth: ${{ secrets.WEBHOOK_AUTH_SGA }}
           data: >-
-            {"commands":["git pull", "npm i"]}
+            {"commands":["git config --global rebase.autoStash true", "git pull", "npm i"]}
