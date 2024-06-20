@@ -40,17 +40,6 @@ jobs:
         python3 -m venv .venv
         pip install -r requirements.txt
 
-    - name: Flet Build Web
-      run: |
-            echo "GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}, USER: ${GITHUB_REPOSITORY%/*}, PROJECT_BASE_URL: ${GITHUB_REPOSITORY#*/}"
-            flet build web --base-url ${GITHUB_REPOSITORY#*/} --route-url-strategy hash
-
-    - name: Upload Artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        name: web-build-artifact  # the name of the artifact
-        path: build/web
-
   deploy:
     needs: build  # wait for the "build" job to get done before executing this "deploy" job
 
