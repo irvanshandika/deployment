@@ -1,7 +1,7 @@
 {
   "scripts": {
     "watch": "npx tailwindcss -i ./static/src/style.css -o ./static/dist/css/output.css --watch",
-    "dev": "flask run"
+    "dev": "python app.py"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.4"
