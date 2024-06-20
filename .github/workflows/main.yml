@@ -39,11 +39,6 @@ jobs:
         python -m pip install --upgrade pip
         python3 -m venv .venv
         pip install -r requirements.txt
-  
-    - name: Setup Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.19.0'
 
     - name: Flet Build Web
       run: |
