@@ -15,4 +15,4 @@ jobs:
           webhook_secret: ${{ secrets.WEBHOOK_SECRET_SGA }}
           webhook_auth: ${{ secrets.WEBHOOK_AUTH_SGA }}
           data: >-
-            {"commands":["git pull", "pip install -r requirements.txt","npm i"]}
+            {"commands":["git pull", "npm i"]}
