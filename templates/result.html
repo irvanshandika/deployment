@@ -1,5 +1,4 @@
 {% extends "layout.html" %} {% block content %}
-
 <div class="py-8 lg:py-16 px-4 mx-auto mt-5 max-w-screen-md h-[60vh]">
     <h1 class="text-3xl font-bold text-center mb-4">Hasil Prediksi</h1>
     <div class="bg-white p-6 rounded shadow-md text-center">
@@ -16,9 +15,11 @@
                         d="M5 13V1m0 0L1 5m4-4 4 4" />
                 </svg>
             </div>
+
         </div>
         <a href="{{ url_for('klasifikasi') }}" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded">Upload
-            Another Image</a>
+            Another Image
+        </a>
     </div>
 </div>
 {% endblock %}
