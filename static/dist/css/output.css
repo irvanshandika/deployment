@@ -2088,11 +2088,6 @@ input:checked + .toggle-bg {
   --scrollspy-offset: 220;
 }
 
-#chart {
-  max-width: 650px;
-  margin: 35px auto;
-}
-
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2652,3 +2647,4 @@ input:checked + .toggle-bg {
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
+
